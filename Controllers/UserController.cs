@@ -22,7 +22,7 @@ namespace Shop.Controllers
             [FromServices]DataContext context
         )
         {
-            var users = context.Users.AsNoTracking().ToListAsync();
+            var users = await context.Users.AsNoTracking().ToListAsync();
             return Ok(users);
         }
 
