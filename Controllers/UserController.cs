@@ -92,7 +92,7 @@ namespace Shop.Controllers
         {
             var user = await context.Users
                 .AsNoTracking()
-                .Where(x => x.UserName == model.UserName && x.Password == model.Password)
+                .Where(x => x.Username == model.Username && x.Password == model.Password)
                 .FirstOrDefaultAsync();
 
             if (user == null)

@@ -12,23 +12,20 @@ namespace Shop.Controllers
             [FromServices]DataContext context
         )
         {
-            var emplyee = new User { Id = 1, UserName = "ivanrodfre", Password = "123" };
-            var manager = new User { Id = 2, UserName = "joao", Password = "123" };
+            var employee = new User { Id = 1, Username = "robin", Password = "robin", Role = "employee" };
+            var manager = new User { Id = 2, Username = "batman", Password = "batman", Role = "manager" };
             var category = new Category { Id = 1, Title = "Informática" };
-            var product = new Product { Id = 1, CategoryId = 1, Title = "Produto 1", Description = "Descrição aqui", Price = 299 };
-
-            context.Users.Add(emplyee);
+            var product = new Product { Id = 1, Category = category, Title = "Mouse", Price = 299, Description = "Mouse Gamer" };
+            context.Users.Add(employee);
             context.Users.Add(manager);
             context.Categories.Add(category);
             context.Products.Add(product);
-
             await context.SaveChangesAsync();
 
             return Ok(new
             {
                 message = "Dados configurados"
             });
-
         }
     }
 }
