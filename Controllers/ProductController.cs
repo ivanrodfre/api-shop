@@ -14,6 +14,7 @@ public class ProductController : ControllerBase
 
     [HttpGet]
     [Route("")]
+    [AllowAnonymous]
     public async Task<ActionResult<List<Product>>> Get([FromServices] DataContext context)
     {
         var products = await context.Products.Include(x => x.Category).AsNoTracking().ToListAsync();
