@@ -69,3 +69,4 @@ C:\Users\IvanRodFrePC\Source\repos\Shop\obj\Debug\netcoreapp3.0\staticwebassets\
 C:\Users\IvanRodFrePC\Source\repos\Shop\obj\Debug\netcoreapp3.0\Shop.dll
 C:\Users\IvanRodFrePC\Source\repos\Shop\obj\Debug\netcoreapp3.0\Shop.pdb
 C:\Users\IvanRodFrePC\Source\repos\Shop\obj\Debug\netcoreapp3.0\Shop.genruntimeconfig.cache
+C:\Users\IvanRodFrePC\Source\repos\Shop\obj\Debug\netcoreapp3.0\Shop.csprojAssemblyReference.cache
